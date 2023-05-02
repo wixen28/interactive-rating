@@ -1,0 +1,240 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    max-width: 2000px;
+    background-color: rgb(27, 24, 24);
+    overflow: hidden;
+}
+
+ .whole-container {
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 280px;
+    height: auto;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 10px;
+    overflow: auto;
+}
+
+
+.hide-container{
+    display: none;
+}
+.star-day {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.star {
+    width: 35px;
+    height: 35px;
+    background: #3a4655;
+    display: flex;
+            justify-content: center;
+            align-items: center;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .toggle {
+    width: 35px;
+    height: 35px;
+    background: #3a4655;
+    display: flex;
+            justify-content: center;
+            align-items: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.795);
+  }
+
+  .toggle:hover {
+    background: #737d88;
+  }
+  
+  [data-theme=day] {
+    color: #000000;
+    background-color: #b6c6dc;
+  }
+
+.whole-container .header1 {
+    color: rgba(255, 255, 255, 0.795);
+    font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.whole-container .desc1 {
+    color: rgba(255, 255, 255, 0.53);
+    font-size: 12px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.points-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.point-div {
+    width: 35px;
+    height: 35px;
+    background: #3a4655;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50%;
+    margin-left: 15px;
+    color: rgba(255, 255, 255, 0.625);
+    cursor: pointer;
+}
+.point-div:hover{
+    background: #737d88;
+}
+
+
+#button {
+    padding: 7px 93px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: rgba(255, 255, 255, 0.795);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#button:hover {
+    background-color: hsla(32, 77%, 55%, 0.987);
+}
+
+.attribution {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+@media screen and (min-width: 370px) {
+    .whole-container {
+        width: 350px;
+        height: auto;
+    }
+
+    .points-container {
+        margin-left: 10px;
+    }
+
+    .point-div {
+        margin-left: 25px;
+    }
+
+    #button {
+        width: 290px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* thank you part */
+
+.whole-container-thank {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 280px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 10px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 200px;
+    overflow: auto;
+}
+
+.default {
+    visibility: hidden;
+}
+
+ .img-thanku {
+    transform: scale(0.8);
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+
+.selected-points {
+    color:hsl(25, 97%, 53%);
+    font-size: 0.8rem;
+    height: 35px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3a4655;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.thankyou {
+    color:rgba(255, 255, 255, 0.795);
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.desc2{
+    color:rgba(255, 255, 255, 0.53);
+    font-size: 12px;
+    margin-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+span {
+    font-weight: bold;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (min-width: 370px) {
+    .whole-container-thank {
+        width: 350px;
+        height: auto;
+    }
+
+    .img-thanku {
+        transform: scale(0.9);
+    }
+
+    .thankyou {
+        font-size: 20px;
+    }
+
+    .desc2 {
+        font-size: 14px;
+    }
+}
